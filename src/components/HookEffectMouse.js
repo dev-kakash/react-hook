@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 const HookEffectMouse = () => {
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
+
   const printMouse = (e) => {
     console.log("Mouse Event......");
     setX(e.clientX);
@@ -11,6 +12,11 @@ const HookEffectMouse = () => {
   useEffect(() => {
     console.log("useEffect");
     window.addEventListener("mousemove", printMouse);
+
+    return () => {
+      console.log("Removinggggggggggggg.......");
+      window.removeEventListener("mousemove", printMouse);
+    };
   }, []);
   return (
     <div>

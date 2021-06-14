@@ -8,6 +8,7 @@ import ClassCounterTwo from "./components/ClassCounterTwo";
 import HookEffect from "./components/HookEffect";
 import HookEffectTwo from "./components/HookEffectTwo";
 import HookEffectMouse from "./components/HookEffectMouse";
+import HookEffectCleanUp from "./components/HookEffectCleanUp";
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
       <HookCounterFour /> 
       <ClassCounterTwo />
       <HookEffect />
-      <HookEffectTwo />*/}
-      <HookEffectMouse />
+      <HookEffectTwo />
+      <HookEffectMouse />*/}
+      <HookEffectCleanUp />
     </div>
   );
 }
