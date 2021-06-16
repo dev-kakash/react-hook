@@ -11,6 +11,7 @@ import HookEffectMouse from "./components/HookEffectMouse";
 import HookEffectCleanUp from "./components/HookEffectCleanUp";
 import Counter from "./components/Counter";
 import HookEffectCount from "./components/HookEffectCount";
+import DataFatching from "./components/DataFatching";
 
 function App() {
   return (
@@ -24,9 +25,10 @@ function App() {
       <HookEffect />
       <HookEffectTwo />
       <HookEffectMouse />
-      <HookEffectCleanUp /> */}
+      <HookEffectCleanUp /> 
       <Counter />
-      <HookEffectCount />
+      <HookEffectCount />*/}
+      <DataFatching />
     </div>
   );
 }
