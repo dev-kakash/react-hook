@@ -14,6 +14,7 @@ import Counter from "./components/Counter";
 import HookEffectCount from "./components/HookEffectCount";
 import DataFatching from "./components/DataFatching";
 import ComponentC from "./components/ComponentC";
+import CounterWithReducer from "./components/CounterWithReducer";
 export const UserName = React.createContext();
 function App() {
   return (
@@ -30,10 +31,11 @@ function App() {
       <HookEffectCleanUp /> 
       <Counter />
       <HookEffectCount />
-      <DataFatching /> */}
+      <DataFatching /> 
       <UserName.Provider value={"akash"}>
         <ComponentC />
-      </UserName.Provider>
+      </UserName.Provider>*/}
+      <CounterWithReducer />
     </div>
   );
 }
