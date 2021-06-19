@@ -16,6 +16,7 @@ import DataFatching from "./components/DataFatching";
 import ComponentC from "./components/ComponentC";
 import CounterWithReducer from "./components/CounterWithReducer";
 import CounterTwo from "./components/CounterTwo";
+import CounterThree from "./components/CounterThree";
 export const UserName = React.createContext();
 function App() {
   return (
@@ -36,8 +37,9 @@ function App() {
       <UserName.Provider value={"akash"}>
         <ComponentC />
       </UserName.Provider>
-      <CounterWithReducer /> */}
-      <CounterTwo />
+      <CounterWithReducer /> 
+      <CounterTwo /> */}
+      <CounterThree />
     </div>
   );
 }
