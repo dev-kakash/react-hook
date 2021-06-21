@@ -20,6 +20,8 @@ import CounterThree from "./components/CounterThree";
 import Component_1 from "./components/Component_1";
 import Component_2 from "./components/Component_2";
 import Component_3 from "./components/Component_3";
+import DataFatching1 from "./components/DataFatching1";
+import FatchingData2 from "./components/FatchingData2";
 export const CountContext = React.createContext();
 export const UserName = React.createContext();
 
@@ -39,11 +41,11 @@ const reducer = (state, action) => {
 function App() {
   const [count, dispatch] = useReducer(reducer, initialState);
   return (
-    <CountContext.Provider
-      value={{ countState: count, countDispatch: dispatch }}
-    >
-      <div className="App">
-        {/* <ClassCounter />
+    // <CountContext.Provider
+    //   value={{ countState: count, countDispatch: dispatch }}
+    // >
+    <div className="App">
+      {/* <ClassCounter />
       <HookCounter />
       <HookCounterTwo />
       <HookCounterThree />
@@ -61,13 +63,15 @@ function App() {
       </UserName.Provider>
       <CounterWithReducer /> 
       <CounterTwo /> 
-      <CounterThree /> */}
+      <CounterThree /> 
         Count - {count}
         <Component_1 />
         <Component_2 />
         <Component_3 />
-      </div>
-    </CountContext.Provider>
+      <DataFatching1 /> */}
+      <FatchingData2 />
+    </div>
+    // </CountContext.Provider>
   );
 }
 
